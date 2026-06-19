@@ -1,171 +1,781 @@
 *{
 box-sizing:border-box;
+margin:0;
+padding:0;
 }
 
 body{
-margin:0;
+
+```
 background:
-radial-gradient(circle at top,#3f2b96 0%,#171923 30%,#0d1117 100%);
-color:white;
-font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-line-height:1.7;
+radial-gradient(circle at top,
+#4b0082 0%,
+#1b1035 25%,
+#0d1117 70%,
+#05070a 100%);
+
+color:#f5f5f5;
+
+font-family:
+Inter,
+Segoe UI,
+sans-serif;
+
+line-height:1.8;
+```
+
 }
 
 .container{
-max-width:950px;
+
+```
+width:min(1100px,92%);
 margin:auto;
-padding:40px 20px;
-}
-
-section{
-background:rgba(255,255,255,.05);
-backdrop-filter:blur(18px);
-border:1px solid rgba(255,255,255,.1);
-border-radius:30px;
-padding:40px;
-margin-bottom:35px;
-
-```
-box-shadow:
-0 8px 32px rgba(0,0,0,.3);
-
-transition:.3s;
 ```
 
-}
-
-section:hover{
-transform:translateY(-4px);
-}
-
-.hero{
-text-align:center;
 }
 
 h1{
-font-size:4rem;
-margin-bottom:10px;
 
 ```
-background:linear-gradient(90deg,#ffffff,#b388ff);
--webkit-background-clip:text;
--webkit-text-fill-color:transparent;
+font-size:4.5rem;
 
-text-shadow:
-0 0 30px rgba(179,136,255,.5);
+font-weight:900;
+
+color:white;
+
+letter-spacing:-3px;
 ```
 
 }
 
 h2{
-color:#d4d4ff;
-margin-top:40px;
+
+```
+color:#d9c7ff;
+```
+
 }
 
 h3{
+
+```
 color:#9ca3af;
-font-style:italic;
+
+font-weight:400;
+```
+
 }
 
 p{
+
+```
 color:#d1d5db;
+```
+
 }
 
-.info{
-margin-top:30px;
+.hero{
+
+```
+text-align:center;
+
+padding-top:120px;
+
+padding-bottom:100px;
+```
+
+}
+
+.subtitle{
+
+```
+margin-top:20px;
+
+font-size:1.2rem;
+
+color:#b8b8c8;
+```
+
+}
+
+.player{
+
+```
+width:min(800px,100%);
+
+margin:50px auto;
+
+padding:50px;
+
+background:
+rgba(255,255,255,.04);
+
+border:
+
+1px solid rgba(255,255,255,.1);
+
+border-radius:40px;
+
+box-shadow:
+
+0 0 80px rgba(139,92,246,.2);
+```
+
 }
 
 audio{
+
+```
 width:100%;
+
 margin-top:25px;
-border-radius:15px;
-
-```
-filter:
-drop-shadow(0 0 20px rgba(179,136,255,.4));
 ```
 
 }
 
-pre{
-white-space:pre-wrap;
+.about{
 
 ```
-background:rgba(255,255,255,.03);
-
-padding:30px;
-
-border-radius:20px;
-
-border-left:5px solid #b388ff;
-
-color:#f3f4f6;
-
-font-size:1rem;
-
-overflow-x:auto;
+margin-top:100px;
 ```
 
 }
-
-hr{
-border:none;
-height:1px;
+.carousel-card{
 
 ```
+width:min(700px,100%);
+
+padding:40px;
+
+margin-top:60px;
+
+border-radius:35px;
+
 background:
-linear-gradient(to right,
-transparent,
-rgba(255,255,255,.25),
-transparent);
 
-margin:40px 0;
+rgba(255,255,255,.04);
+
+border:
+
+1px solid rgba(255,255,255,.08);
+
+box-shadow:
+
+0 10px 40px rgba(0,0,0,.3);
+
+transition:
+.4s;
+```
+
+}
+
+.carousel-card:hover{
+
+```
+transform:
+translateY(-10px);
+
+box-shadow:
+
+0 20px 60px rgba(139,92,246,.25);
+```
+
+}
+
+.left{
+
+```
+margin-right:auto;
+```
+
+}
+
+.right{
+
+```
+margin-left:auto;
+```
+
+}
+
+.carousel-card h2{
+
+```
+font-size:2rem;
+
+margin-bottom:20px;
+
+color:white;
+```
+
+}
+
+.carousel-card p{
+
+```
+font-size:1.05rem;
+
+color:#d1d5db;
+```
+
+}
+
+.song-info{
+
+```
+margin-top:120px;
+```
+
+}
+
+.song-info .carousel-card{
+
+```
+width:min(500px,100%);
+```
+
+}
+
+.credits{
+
+```
+margin-top:120px;
+
+text-align:center;
+```
+
+}
+
+.credits p{
+
+```
+margin-top:20px;
+
+font-size:1.1rem;
 ```
 
 }
 
 footer{
+
+```
+margin-top:120px;
+
+padding-bottom:60px;
+
+text-align:center;
+```
+
+}
+
+footer p{
+
+```
+margin-top:20px;
+
+color:#9ca3af;
+```
+
+}
+.lyrics{
+
+```
+margin-top:140px;
+```
+
+}
+
+.lyrics h1{
+
+```
 text-align:center;
 
-```
-color:#9ca3af;
-
-margin-top:50px;
+margin-bottom:80px;
 ```
 
 }
 
-strong{
+.lyrics-box{
+
+```
+background:
+
+rgba(255,255,255,.03);
+
+border:
+
+1px solid rgba(255,255,255,.08);
+
+border-radius:40px;
+
+padding:50px;
+
+margin-top:70px;
+
+transition:
+.4s;
+```
+
+}
+
+.lyrics-box:hover{
+
+```
+transform:
+
+translateY(-8px);
+
+box-shadow:
+
+0 20px 70px rgba(139,92,246,.15);
+```
+
+}
+
+.lyrics-box h2{
+
+```
+font-size:2.3rem;
+
 color:white;
-}
 
-::-webkit-scrollbar{
-width:10px;
-}
+margin-bottom:35px;
+```
 
-::-webkit-scrollbar-track{
-background:#0d1117;
-}
-
-::-webkit-scrollbar-thumb{
-background:#6d28d9;
-border-radius:20px;
-}
-
-::-webkit-scrollbar-thumb:hover
-
-@media(max-width:700px){
-
-h1{
-font-size:2.8rem;
-}
-
-section{
-padding:25px;
 }
 
 pre{
-padding:20px;
+
+```
+white-space:pre-wrap;
+
+font-family:
+
+"SF Mono",
+Consolas,
+monospace;
+
+font-size:1rem;
+
+line-height:2.2;
+
+color:#f3f4f6;
+```
+
+}
+
+hr{
+
+```
+border:none;
+
+height:1px;
+
+background:
+
+linear-gradient(
+to right,
+transparent,
+rgba(255,255,255,.2),
+transparent);
+
+margin:100px 0;
+```
+
+}
+
+::selection{
+
+```
+background:#8b5cf6;
+
+color:white;
+```
+
+}
+
+::-webkit-scrollbar{
+
+```
+width:10px;
+```
+
+}
+
+::-webkit-scrollbar-track{
+
+```
+background:#0d1117;
+```
+
+}
+
+::-webkit-scrollbar-thumb{
+
+```
+background:#8b5cf6;
+
+border-radius:50px;
+```
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+```
+background:#a78bfa;
+```
+
+}
+
+@media(max-width:800px){
+
+h1{
+
+font-size:3rem;
+
+}
+
+.hero{
+
+padding-top:70px;
+
+}
+
+.player{
+
+padding:30px;
+
+}
+
+.carousel-card{
+
+padding:30px;
+
+}
+
+.lyrics-box{
+
+padding:30px;
+
+}
+
+}
+.hero{
+
+```
+min-height:100vh;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+```
+
+}
+
+.hero h1{
+
+```
+margin-bottom:15px;
+```
+
+}
+
+.hero h2{
+
+```
+font-size:2rem;
+
+margin-bottom:20px;
+```
+
+}
+
+.hero h3{
+
+```
+font-size:1.5rem;
+
+margin-bottom:30px;
+```
+
+}
+
+.player{
+
+```
+position:relative;
+
+overflow:hidden;
+```
+
+}
+
+.player::before{
+
+```
+content:"♪ NOW PLAYING";
+
+display:block;
+
+color:#b388ff;
+
+font-size:.9rem;
+
+letter-spacing:4px;
+
+margin-bottom:25px;
+```
+
+}
+
+.player:hover{
+
+```
+transform:
+translateY(-8px);
+
+transition:.4s;
+```
+
+}
+
+audio{
+
+```
+height:55px;
+```
+
+}
+body::after{
+
+content:"";
+
+position:fixed;
+
+width:900px;
+
+height:900px;
+
+background:
+
+radial-gradient(circle,
+rgba(139,92,246,.15),
+transparent 70%);
+
+top:-300px;
+
+right:-250px;
+
+pointer-events:none;
+
+filter:blur(120px);
+
+opacity:.7;
+
+animation:aurora 12s ease-in-out infinite alternate;
+
+}
+
+@keyframes aurora{
+
+0%{
+
+transform:
+translateX(0px)
+translateY(0px);
+
+}
+
+100%{
+
+transform:
+translateX(-120px)
+translateY(100px);
+
+}
+
+}
+/* Floating effect */
+
+.player{
+
+animation:float 8s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+0%,100%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-10px);
+
+}
+
+}
+
+/* Nice links */
+
+a{
+
+color:#b388ff;
+
+text-decoration:none;
+
+transition:.3s;
+
+}
+
+a:hover{
+
+color:white;
+
+}
+
+/* Better spacing */
+
+section{
+
+margin-bottom:150px;
+
+}
+
+/* Stronger titles */
+
+section h1{
+
+margin-bottom:50px;
+
+}
+
+/* Better paragraphs */
+
+p{
+
+max-width:800px;
+
+}
+
+/* Pretty focus */
+
+audio:focus{
+
+outline:none;
+
+}
+
+/* Hero subtitle */
+
+.subtitle{
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+
+font-size:.95rem;
+
+}
+
+/* Elegant footer */
+
+footer{
+
+opacity:.7;
+
+font-size:.95rem;
+
+}
+
+/* Small fade animation */
+
+.carousel-card,
+.lyrics-box{
+
+animation:appear .8s ease;
+
+}
+
+@keyframes appear{
+
+from{
+
+opacity:0;
+
+transform:
+translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:
+translateY(0px);
+
+}
+
+}
+
+/* Selection */
+
+::selection{
+
+background:#8b5cf6;
+
+color:white;
+
+}
+
+/* Mobile */
+
+@media(max-width:700px){
+
+.hero h1{
+
+font-size:4rem;
+
+}
+
+.hero h2{
+
+font-size:1.8rem;
+
+}
+
+.hero h3{
+
+font-size:1.2rem;
+
+}
+
+.player{
+
+padding:30px;
+
+}
+
+.carousel-card{
+
+padding:25px;
+
+}
+
+.lyrics-box{
+
+padding:25px;
+
 }
 
 }
