@@ -661,11 +661,11 @@ margin-bottom:50px;
 
 /* Better paragraphs */
 
-p{
-
-max-width:800px;
-
+.about p,
+.carousel-card p{
+    max-width:800px;
 }
+
 
 /* Pretty focus */
 
@@ -779,5 +779,7 @@ padding:25px;
 }
 
 }
+
+
 
 
